@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./divisi.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="divisi">
+      <img
+        class="cybersecurity-icon"
+        alt=""
+        src="./public/cybersecurity@2x.png"
+        id="cybersecurityImage"
+      />
+
+      <img class="gis-icon" alt="" src="./public/gis@2x.png" id="gisImage" />
+
+      <img
+        class="bigdata-icon"
+        alt=""
+        src="./public/bigdata@2x.png"
+        id="bigdataImage"
+      />
+
+      <img
+        class="gametech-icon"
+        alt=""
+        src="./public/gametech@2x.png"
+        id="gametechImage"
+      />
+
+      <div class="landing-page-builder">DIVISI</div>
+      <img class="logombc-1-icon2" alt="" src="./public/logombc-1@2x.png" />
+
+      <div class="weattackweprotect2">#WeAttackWeProtect</div>
+      <div class="home3" id="homeText">Home</div>
+      <div class="field2">Field</div>
+      <div class="contact2" id="contactText">Contact</div>
+      <div class="about2" id="aboutText">About</div>
+    </div>
+
+    <script>
+      var cybersecurityImage = document.getElementById("cybersecurityImage");
+      if (cybersecurityImage) {
+        cybersecurityImage.addEventListener("click", function (e) {
+          window.location.href = "./cybersecurity.html";
+        });
+      }
+      
+      var gisImage = document.getElementById("gisImage");
+      if (gisImage) {
+        gisImage.addEventListener("click", function (e) {
+          window.location.href = "./g-i-s.html";
+        });
+      }
+      
+      var bigdataImage = document.getElementById("bigdataImage");
+      if (bigdataImage) {
+        bigdataImage.addEventListener("click", function (e) {
+          window.location.href = "./big-data.html";
+        });
+      }
+      
+      var gametechImage = document.getElementById("gametechImage");
+      if (gametechImage) {
+        gametechImage.addEventListener("click", function (e) {
+          window.location.href = "./game-tech.html";
+        });
+      }
+      
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./home.html";
+        });
+      }
+      
+      var contactText = document.getElementById("contactText");
+      if (contactText) {
+        contactText.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+@keyframes shake-horizontal {
+  0%,
+  to {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+.bigdata-icon,
+.cybersecurity-icon,
+.gametech-icon,
+.gis-icon {
+  position: absolute;
+  top: 332px;
+  left: 122px;
+  border-radius: var(--br-21xl);
+  width: 264px;
+  height: 264px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.bigdata-icon:hover,
+.cybersecurity-icon:hover,
+.gametech-icon:hover,
+.gis-icon:hover {
+  animation: 1s ease 0s infinite normal none shake-horizontal;
+  opacity: 1;
+}
+.bigdata-icon,
+.gametech-icon,
+.gis-icon {
+  left: 428px;
+}
+.bigdata-icon,
+.gametech-icon {
+  left: 734px;
+}
+.gametech-icon {
+  left: 1040px;
+}
+.landing-page-builder {
+  position: absolute;
+  top: 189px;
+  left: 582px;
+  font-size: var(--font-size-77xl);
+  letter-spacing: -0.04em;
+  line-height: 80px;
+  font-weight: 600;
+  text-align: center;
+}
+.logombc-1-icon2 {
+  position: absolute;
+  top: 25px;
+  left: 193px;
+  width: 177px;
+  height: 37px;
+  object-fit: cover;
+}
+.weattackweprotect2 {
+  position: absolute;
+  top: 0;
+  left: 1070px;
+  letter-spacing: -0.04em;
+  line-height: 80px;
+  font-weight: 600;
+  text-align: center;
+}
+.about2,
+.contact2,
+.field2,
+.home3 {
+  position: absolute;
+  top: 33px;
+  letter-spacing: -0.01em;
+  line-height: 20px;
+}
+.home3 {
+  left: 546px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.about2,
+.contact2,
+.field2 {
+  left: 642px;
+  font-weight: 800;
+}
+.about2,
+.contact2 {
+  left: 730px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.about2 {
+  left: 846px;
+}
+.divisi {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  height: 809px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--b4-2-semibold-size);
+  color: var(--dark-000);
+  font-family: var(--b4-2-semibold);
+}

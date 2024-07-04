@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./g-i-s.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="gis">
+      <div class="header2">
+        <div class="geographical-information-syste-wrapper">
+          <div class="geographical-information-syste-container">
+            <p class="geographical">
+              <span class="geographical1">GEOGRAPHICAL</span>
+              <span> </span>
+            </p>
+            <p class="geographical">INFORMATION SYSTEM</p>
+          </div>
+        </div>
+      </div>
+      <div class="pengenalan-arcgis-arcgis-container">
+        <p class="geographical">PENGENALAN ARCGIS</p>
+        <p class="geographical">
+          ArcGIS adalah sebuah platform perangkat lunak yang dikembangkan oleh
+          perusahaan Esri (Environmental Systems Research Institute), yang
+          digunakan untuk membuat, mengelola, menganalisis, dan
+          memvisualisasikan data geografis atau geospasial. Platform ini
+          digunakan dalam berbagai bidang seperti pemetaan, analisis lingkungan,
+          perencanaan kota, manajemen sumber daya alam, mitigasi bencana, dan
+          masih banyak lagi.
+        </p>
+      </div>
+      <div class="fungsi-dari-arcgis-container">
+        <p class="geographical">Fungsi dari ArcGIS mencakup beberapa hal:</p>
+        <ol class="pemetaan-arcgis-memungkinkan">
+          <li class="analisis-spasial-platform">
+            Pemetaan: ArcGIS memungkinkan pengguna untuk membuat peta digital
+            dari berbagai jenis data, seperti data vektor (titik, garis,
+            poligon) dan data raster (gambar berpiksel). Ini memungkinkan
+            representasi visual dari informasi geografis.
+          </li>
+          <li class="analisis-spasial-platform">
+            Analisis Spasial: Platform ini menyediakan berbagai alat untuk
+            menganalisis data geografis. Contohnya termasuk analisis jarak,
+            overlay layer, analisis kecenderungan spasial, dan lain-lain.
+          </li>
+          <li class="analisis-spasial-platform">
+            Manajemen Data: ArcGIS memungkinkan pengguna untuk menyimpan,
+            mengatur, dan mengelola data geografis dalam berbagai format.
+          </li>
+          <li class="analisis-spasial-platform">
+            Visualisasi: ArcGIS menyediakan berbagai alat untuk
+            memvisualisasikan data geografis dalam bentuk peta, grafik, dan tata
+            letak yang dapat dimengerti dengan mudah.
+          </li>
+          <li class="analisis-spasial-platform">
+            Kolaborasi: ArcGIS memfasilitasi kolaborasi antara pengguna dalam
+            pengembangan proyek, pertukaran data, dan pembuatan keputusan
+            berbasis lokasi.
+          </li>
+          <li>
+            Pengembangan Aplikasi: ArcGIS menyediakan platform untuk
+            pengembangan aplikasi berbasis lokasi yang dapat disesuaikan sesuai
+            kebutuhan.
+          </li>
+        </ol>
+      </div>
+      <div class="place-image-here39" data-animate-on-scroll></div>
+      <div class="place-image-here40" data-animate-on-scroll></div>
+      <div class="place-image-here41" data-animate-on-scroll></div>
+      <img class="gis-icon1" alt="" src="./public/gis1@2x.png" />
+
+      <div class="place-image-here42" data-animate-on-scroll></div>
+      <div class="place-image-here43" data-animate-on-scroll></div>
+      <img class="logombc-1-icon6" alt="" src="./public/logombc-1@2x.png" />
+
+      <div class="weattackweprotect6">#WeAttackWeProtect</div>
+      <div class="home7" id="homeText">Home</div>
+      <div class="field6" id="fieldText">Field</div>
+      <div class="contact6" id="contactText">Contact</div>
+      <div class="about6" id="aboutText">About</div>
+    </div>
+
+    <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./home.html";
+        });
+      }
+      
+      var fieldText = document.getElementById("fieldText");
+      if (fieldText) {
+        fieldText.addEventListener("click", function (e) {
+          window.location.href = "./divisi.html";
+        });
+      }
+      
+      var contactText = document.getElementById("contactText");
+      if (contactText) {
+        contactText.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

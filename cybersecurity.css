@@ -1,0 +1,213 @@
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+.landing-page-builder1 {
+  position: absolute;
+  top: 187px;
+  left: 352px;
+  font-size: var(--font-size-77xl);
+  letter-spacing: -0.04em;
+  line-height: 80px;
+  font-weight: 600;
+  text-align: center;
+}
+.cybersecurity-icon1 {
+  position: absolute;
+  top: 339px;
+  left: 558px;
+  border-radius: var(--br-21xl);
+  width: 356px;
+  height: 356px;
+  object-fit: cover;
+}
+.cybersecurity-icon1:hover {
+  animation: 1s ease 0s infinite normal none wobble-hor-bottom;
+  opacity: 1;
+}
+.keamanan-siber-cyber {
+  position: absolute;
+  top: 804px;
+  left: 259px;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--color-darkslategray);
+  white-space: pre-wrap;
+  text-align: justify;
+  display: inline-block;
+  width: 944px;
+}
+.data-pribadi {
+  margin: 0;
+}
+.data-pribadi-adalah {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.data-pribadi-data-container {
+  position: absolute;
+  top: 1034px;
+  left: 259px;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--color-darkslategray);
+  text-align: justify;
+  display: inline-block;
+  width: 944px;
+}
+.place-image-here24 {
+  position: absolute;
+  top: 267px;
+  left: 139px;
+  box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+  border-radius: var(--br-13xl);
+  background-color: var(--color-white);
+  width: 164px;
+  height: 164px;
+  opacity: 1;
+}
+.place-image-here24.animate,
+.place-image-here25.animate,
+.place-image-here26.animate,
+.place-image-here27.animate,
+.place-image-here28.animate {
+  animation: 1s ease 0s infinite normal forwards pulsate;
+}
+.place-image-here25,
+.place-image-here26,
+.place-image-here27,
+.place-image-here28 {
+  position: absolute;
+  top: 89px;
+  left: 255px;
+  box-shadow: 8px 40px 80px -16px rgba(0, 0, 0, 0.5);
+  border-radius: var(--br-5xl);
+  background-color: var(--dark-000);
+  width: 96px;
+  height: 96px;
+  opacity: 1;
+}
+.place-image-here26,
+.place-image-here27,
+.place-image-here28 {
+  top: 119px;
+  left: 1156px;
+  border-radius: var(--br-13xl);
+  width: 132px;
+  height: 132px;
+}
+.place-image-here27,
+.place-image-here28 {
+  top: 499px;
+  left: 303px;
+  box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-white);
+  width: 196px;
+  height: 196px;
+}
+.place-image-here28 {
+  top: 431px;
+  left: 1024px;
+  box-shadow: 8px 40px 80px -16px rgba(0, 0, 0, 0.5);
+  border-radius: var(--br-21xl);
+  background-color: var(--dark-000);
+  width: 264px;
+  height: 264px;
+}
+.logombc-1-icon3 {
+  position: absolute;
+  top: 25px;
+  left: 193px;
+  width: 177px;
+  height: 37px;
+  object-fit: cover;
+}
+.weattackweprotect3 {
+  position: absolute;
+  top: 0;
+  left: 1070px;
+  letter-spacing: -0.04em;
+  line-height: 80px;
+  font-weight: 600;
+  text-align: center;
+}
+.about3,
+.contact3,
+.field3,
+.home4 {
+  position: absolute;
+  top: 33px;
+  left: 546px;
+  letter-spacing: -0.01em;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.about3,
+.contact3,
+.field3 {
+  left: 642px;
+  font-weight: 800;
+}
+.about3,
+.contact3 {
+  left: 730px;
+  font-weight: 500;
+}
+.about3 {
+  left: 846px;
+}
+.cybersecurity {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  height: 1373px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--b4-2-semibold-size);
+  color: var(--dark-000);
+  font-family: var(--b4-2-semibold);
+}

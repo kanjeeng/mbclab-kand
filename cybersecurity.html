@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./cybersecurity.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="cybersecurity">
+      <div class="landing-page-builder1">CYBERSECURITY</div>
+      <img
+        class="cybersecurity-icon1"
+        alt=""
+        src="./public/cybersecurity1@2x.png"
+      />
+
+      <div class="keamanan-siber-cyber">
+        Keamanan siber (Cyber Security) merupakan upaya berkelanjutan yang
+        bertujuan melindungi individu, organisasi, dan pemerintah dari serangan
+        digital dengan mengamankan sistem jaringan dan data dari penggunaan atau
+        bahaya yang tidak sah. Ini melibatkan serangkaian langkah dan tindakan
+        yang dilakukan untuk melindungi sistem komputer, jaringan, dan data dari
+        serangan atau akses ilegal. Di era modern yang hampir segalanya
+        terhubung secara digital, praktik keamanan siber menjadi sangat penting
+        untuk menjaga integritas dan keamanan informasi serta infrastruktur
+        digital.
+      </div>
+      <div class="data-pribadi-data-container">
+        <p class="data-pribadi">Data Pribadi</p>
+        <p class="data-pribadi">&nbsp;</p>
+        <p class="data-pribadi-adalah">
+          Data pribadi adalah informasi tentang individu yang dapat
+          mengidentifikasi atau mengidentifikasi individu tersebut secara
+          langsung atau tidak langsung melalui sistem elektronik atau
+          non-elektronik. Jenis data pribadi tersebut dibagi menjadi dua jenis:
+          data pribadi yang bersifat umum dan data pribadi yang bersifat
+          spesifik. Contoh data pribadi yang bersifat umum antara lain nama,
+          jenis kelamin, kewarganegaraan, dan agama. Data pribadi yang bersifat
+          spesifik meliputi data dan informasi kesehatan, data biometrik, data
+          genetika, kehidupan/orientasi seksual, pandangan politik, catatan
+          kejahatan, data anak, data keuangan pribadi, dan data lainnya sesuai
+          dengan ketentuan peraturan perundang-undangan.
+        </p>
+      </div>
+      <div class="place-image-here24" data-animate-on-scroll></div>
+      <div class="place-image-here25" data-animate-on-scroll></div>
+      <div class="place-image-here26" data-animate-on-scroll></div>
+      <div class="place-image-here27" data-animate-on-scroll></div>
+      <div class="place-image-here28" data-animate-on-scroll></div>
+      <img class="logombc-1-icon3" alt="" src="./public/logombc-1@2x.png" />
+
+      <div class="weattackweprotect3">#WeAttackWeProtect</div>
+      <div class="home4" id="homeText">Home</div>
+      <div class="field3" id="fieldText">Field</div>
+      <div class="contact3" id="contactText">Contact</div>
+      <div class="about3" id="aboutText">About</div>
+    </div>
+
+    <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./home.html";
+        });
+      }
+      
+      var fieldText = document.getElementById("fieldText");
+      if (fieldText) {
+        fieldText.addEventListener("click", function (e) {
+          window.location.href = "./divisi.html";
+        });
+      }
+      
+      var contactText = document.getElementById("contactText");
+      if (contactText) {
+        contactText.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
